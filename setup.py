@@ -44,18 +44,18 @@ setup(
     description='Concept Relevance Propagation and Relevance Maximization',
     author='Reduan Achtibat',
     license='BSD 3-Clause Clear License',
-    long_description=get_long_description('rachtibat/zennit-crp'),
+    long_description=get_long_description('istepka/zennit-crp'),
     long_description_content_type='text/markdown',
-    url='https://github.com/rachtibat/zennit-crp',
+    url='https://github.com/istepka/zennit-crp',
     packages=find_packages(),
     install_requires=[
-        'zennit<=0.4.6',
-        'torch>=1.7.0, <2.0.0',
-        'numpy<=1.23.5',
+        'zennit',
+        'torch',
+        'numpy',
         'tqdm',
         'matplotlib'
     ],
-    extras_require = {
+    extras_require={
         'fast_img': ['Pillow-SIMD']
     },
     python_requires='>=3.8',
